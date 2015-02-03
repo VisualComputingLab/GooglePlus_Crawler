@@ -19,8 +19,6 @@ The process is initiated by posting (POST request) our request to the Tomcat usi
 
 #Users--- REST calls 
 
-So far…
-
 The user in order to search the Google+ social network for uploaded photos over a specific topic has to post a request with a specific payload to indicate the search parameters. 
 
 i.e.
@@ -150,7 +148,7 @@ The rest implementation for the Google+ crawler.
 @throws Exception	if json object not provided to method 
 
 
-Problems met
+#Problems met
 
 There is a bug concerning next page Tokens’ primitive value when searching for activities. NextPageToken has always a value whether there is one or not, so a check to the response whether is empty or not is required.
 
@@ -160,7 +158,7 @@ Activities shared are treated as separate activities but because this results to
 
 Because of the sequential and multiple get requests as resulting videos increase the process slows down.
 
-Future work
+#Future work
 
 Add encoding to messages posted  to RabbitMQ (UTF-8)
 
